@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      * {
+        padding : 0;
+        margin : 0;
+        background-color: #efedea;
+      }
+      li {
+        list-style-type : none;
+      }
+      body {
+        font-family : '돋움';
+        font-size : 14px;
+        color: #444444;
+      }
+      ul, li {
+          margin: 0;
+          padding : 0:
+        }
+      .clear{
+        clear: both;
+      }
+      a {
+        text-decoration : none;
+        color : black;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 75px;
+        padding: 1rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        margin-top : 130px;
+        margin-right : 200px;
+        margin-bottom : 300px;
+        margin-left : 200px;
+      }
+      #logo {
+        float : left;
+        margin: 5px 0 0 20px;
+      }
+      #menu {
+        display : flex;
+        justify-content: center;
+        position : relative;
+      }
+
+      #main_menu > li {
+        float : left;
+        position : relative;
+      }
+      #main_menu > li > a {
+        font-size : 15px;
+        color : black;
+        text-align : center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display : block;
+        padding: 14px 56px;
+      }
+
+      #subsub {
+        position : absolute;
+        width : 99%;
+        color : black;
+        opacity : 0;
+        visibility : hidden;
+        transition : all 0.15s ease-in;
+      }
+
+      #subsub > li {
+        text-align : center;
+        padding: 20px;
+        border-bottom : 1px solid rgba(244, 244, 244, .5);
+      }
+      #subsub > li > a {
+        color : black;
+        text-decoration : none;
+      }
+
+     #main_menu > li:hover #subsub {
+       opacity : 1;
+       visibility : visible;
+       background-color : rgba(244, 244, 244, .5);
+     }
+     #subsub > li > a:hover {
+       color : #f4f4f4;
+     }
+      #main_img {
+        width: 100%;
+        height: 1000px;
+        background-image: url('img/a.jpg');
+        background-repeat : no-repeat;
+        background-position : top center;
+        margin-top : 20px;
+      }
+      #content{
+        width: 100%;
+        margin: 0 auto;
+      }
+      #content h1 {
+        letter-spacing: 0.20em;
+        font-size : 20px;
+      }
+      #content p {
+        font-size : 12px;
+        color : #918980;
+      }
+      #main_contents{
+        width : 420px;
+        float : left;
+        margin-top : 15px;
+      }
+      #main_contents h3 {
+        font-size : 22px;
+        padding-bottom : 8px;
+
+        border-bottom : solid 1px #cccccc;
+      }
+      #main_contents p {
+        margin-top : 30px;
+        width : 260px;
+        border-top : 1px solid #d1d1d1;
+        line-height : 180%;
+      }
+      #main_contents #figure {
+        margin-top : 30px;
+        text-align : center;
+      }
+        #main_contetns li {
+          padding: 5px;
+        }
+        footer {
+          font-size: 10px;
+          text-align : center;
+          margin-top :100px;
+          margin-bottom : 50px;
+
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Everything.will.beok</title>
+  </head>
+  <body>
+    <div style="position: fixed; bottom: 50px; right: 50px;">
+      <a href="#">TOP</a>
+    </div>
+
+    <header>
+      <div id="logo">
+        <a href="main.html"><img src="img/logo.png" width="80" alt=""></a>
+      </div>
+
+      <nav id="menu">
+
+      <ul id="main_menu">
+        <li><a href="#.html">About</a>
+          <ul id="subsub">
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="location.html">Location</a></li>
+              </ul>
+            </li>
+        <li><a href="#">LookBook</a>
+          <ul id="subsub">
+            <li><a href="new.html">New</a></li>
+            <li><a href="best.html">Best</a></li>
+            </ul>
+          </li>
+        <li><a href="#">LineUp</a>
+          <ul id="subsub">
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="lifestyle.html">LifeStyle</a></li>
+            <li><a href="station.html">Station&Character</a></li>
+            <li><a href="illust.html">Illust&Doodle</a></li>
+            </ul>
+          </li>
+        <li><a href="#">Board</a>
+        <ul id="subsub">
+          <li><a href="notice.html">Notice</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      </nav>
+    </header>
+<!--여기까지 헤더-->
+
+
+    <section>
+      <div id="content">
+        <center><h1>New</h1>
+        <p>매장에 입고된 신상 제품입니다.</p></center>
+        <br><br>
+
+      <div id="main_contents">
+        <center><img src="./img/new-1.png" width="299"alt="">
+        <br>@heesu.n <p><br>somethinglikesunny의 행성 씰스티커 탄생!</p>
+        </center>
+      </div>
+
+      <div id="main_contents">
+        <center><img src="./img/new-2.png" width="300"alt="">
+        <br>@orchid_drops <p><br>신상 병원 스티커 입고 완료!</p>
+        </center>
+      </div>
+
+      <div id="main_contents">
+        <center><img src="./img/new-3.png" width="300"alt="">
+        <br>@orchid_drops <p><br>작품 그 자체인 오키드 니트 신상 제품!</p>
+        </center>
+      </div>
+      <div id="main_contents">
+        <center><img src="./img/new-4.png" width="300"alt="">
+        <br>@eune_mind <p><br>오직 비옥에서만 만날 수 있는 땡큐 페이퍼 백 :)</p>
+        </center>
+      </div>
+
+
+
+      <div id="main_contents">
+          <center><img src="./img/new-5.png" width="300"alt="">
+          <br>@nem_do_ri <p><br>넴도리와 함께 크리스마스 준비 어때요? 모두 입고완료!</p>
+          </center>
+        </div>
+        <div id="main_contents">
+            <center><img src="./img/new-6.png" width="300"alt="">
+            <br>@fromye.market <p><br>이번 프롬예 신상 너무 뵦이 스타일!</p>
+            </center>
+          </div>
+      </div>
+    </section>
+
+    <div class="clear"></div> <!-- float 속성 해제-->
+    <footer>
+      COPYRIGHT © 2019 KIMTAEHYUN. ALL RIGHTS RESERVED
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      * {
+        padding : 0;
+        margin : 0;
+      }
+      li {
+        list-style-type : none;
+      }
+      body {
+        font-family : '돋움';
+        font-size : 14px;
+        color: #444444;
+      }
+      ul, li {
+          margin: 0;
+          padding : 0:
+        }
+      .clear{
+        clear: both;
+      }
+      a {
+        text-decoration : none;
+        color : black;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 75px;
+        padding: 1rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        margin-top : 130px;
+        margin-right : 200px;
+        margin-bottom : 300px;
+        margin-left : 200px;
+      }
+      #logo {
+        float : left;
+        margin: 5px 0 0 20px;
+      }
+      #menu {
+
+        display : flex;
+        justify-content: center;
+        position : relative;
+      }
+
+      #main_menu > li {
+        float : left;
+        position : relative;
+      }
+      #main_menu > li > a {
+        font-size : 15px;
+        color : black;
+        text-align : center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display : block;
+        padding: 14px 56px;
+      }
+
+      #subsub {
+        position : absolute;
+        width : 99%;
+        color : black;
+        opacity : 0;
+        visibility : hidden;
+        transition : all 0.15s ease-in;
+      }
+
+      #subsub > li {
+        text-align : center;
+        padding: 20px;
+        border-bottom : 1px solid rgba(244, 244, 244, .5);
+      }
+      #subsub > li > a {
+        color : black;
+        text-decoration : none;
+      }
+
+     #main_menu > li:hover #subsub {
+       opacity : 1;
+       visibility : visible;
+       background-color : rgba(244, 244, 244, .5);
+     }
+     #subsub > li > a:hover {
+       color : #f4f4f4;
+     }
+     #map {
+       align-items : center;
+     }
+      #content{
+        width: 100%;
+        margin: 0 auto;
+      }
+      #content h1 {
+        letter-spacing: 0.20em;
+        font-size : 20px;
+      }
+      #content p {
+        font-size : 12px;
+        color : #918980;
+      }
+      #main_contents{
+        width : 880px;
+        float : right;
+        margin-top : 25px;
+      }
+      #main_contents h3 {
+        font-size : 22px;
+        padding-bottom : 8px;
+        border-bottom : solid 1px #cccccc;
+      }
+      #main_contents p {
+        margin-top : 30px;
+        line-height : 180%;
+      }
+      #main_contents #figure {
+        margin-top : 30px;
+        text-align : center;
+      }
+        #main_contetns li {
+          padding: 5px;
+        }
+        footer {
+          font-size: 10px;
+          text-align : center;
+          margin-bottom : 100px;
+
+        }
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Everything.will.beok</title>
+  </head>
+  <body>
+    <div style="position: fixed; bottom: 30px; right: 30px;">
+      <a href="#">TOP</a>
+    </div>
+    <header>
+      <div id="logo">
+        <a href="main.html"><img src="img/logo.png" width="80" alt=""></a>
+      </div>
+
+      <nav id="menu">
+
+      <ul id="main_menu">
+        <li><a href="#.html">About</a>
+          <ul id="subsub">
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="location.html">Location</a></li>
+              </ul>
+            </li>
+        <li><a href="#">LookBook</a>
+          <ul id="subsub">
+            <li><a href="new.html">New</a></li>
+            <li><a href="best.html">Best</a></li>
+
+            </ul>
+          </li>
+        <li><a href="#">LineUp</a>
+          <ul id="subsub">
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="lifestyle.html">LifeStyle</a></li>
+            <li><a href="station.html">Station&Character</a></li>
+            <li><a href="illust.html">Illust&Doodle</a></li>
+            </ul>
+          </li>
+        <li><a href="#">Board</a>
+        <ul id="subsub">
+          <li><a href="notice.html">Notice</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      </nav>
+    </header>
+<!--여기까지 헤더-->
+
+
+    <section>
+      <div id="content">
+        <center><h1>Location</h1></center>
+        <center> <p>서울 마포구 연남동 228-34 2F</p>
+        <br><br>
+
+</center>
+
+</div>
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<center>
+<div id="daumRoughmapContainer1575588676642" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1575588676642",
+		"key" : "w5bu",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+      </div>
+    </center>
+    </section>
+
+    <div class="clear"></div> <!-- float 속성 해제-->
+    <footer>
+      COPYRIGHT © 2019 KIMTAEHYUN. ALL RIGHTS RESERVED
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      * {
+        padding : 0;
+        margin : 0;
+        background-color: #efedea;
+      }
+      li {
+        list-style-type : none;
+      }
+      body {
+        font-family : '돋움';
+        font-size : 14px;
+        color: #444444;
+      }
+      ul, li {
+          margin: 0;
+          padding : 0:
+        }
+      .clear{
+        clear: both;
+      }
+      a {
+        text-decoration : none;
+        color : black;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 75px;
+        padding: 1rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        margin-top : 130px;
+        margin-right : 200px;
+        margin-bottom : 300px;
+        margin-left : 200px;
+      }
+      #logo {
+        float : left;
+        margin: 5px 0 0 20px;
+      }
+      #menu {
+        display : flex;
+        justify-content: center;
+        position : relative;
+      }
+
+      #main_menu > li {
+        float : left;
+        position : relative;
+      }
+      #main_menu > li > a {
+        font-size : 15px;
+        color : black;
+        text-align : center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display : block;
+        padding: 14px 56px;
+      }
+
+      #subsub {
+        position : absolute;
+        width : 99%;
+        color : black;
+        opacity : 0;
+        visibility : hidden;
+        transition : all 0.15s ease-in;
+      }
+
+      #subsub > li {
+        text-align : center;
+        padding: 20px;
+        border-bottom : 1px solid rgba(244, 244, 244, .5);
+      }
+      #subsub > li > a {
+        color : black;
+        text-decoration : none;
+      }
+
+     #main_menu > li:hover #subsub {
+       opacity : 1;
+       visibility : visible;
+       background-color : rgba(244, 244, 244, .5);
+     }
+     #subsub > li > a:hover {
+       color : #f4f4f4;
+     }
+     table.notice {
+     border-collapse: separate;
+     border-spacing: 1px;
+     text-align: left;
+     line-height: 1.5;
+     border-top: 1px solid #ccc;
+     margin : 20px 10px;
+ }
+ .back {
+   background-color : gray;
+ }
+ table.notice th {
+     width: 50px;
+     padding: 10px;
+     font-weight: bold;
+     vertical-align: top;
+     border-bottom: 1px solid #ccc;
+ }
+ table.notice #subject {
+     width: 1000px;
+     padding: 10px;
+     text-align : center;
+     vertical-align: top;
+     border-bottom: 1px solid #ccc;
+ }
+
+ table.notice #writer {
+   width: 100px;
+   padding: 10px;
+   vertical-align: top;
+   text-align : center;
+   border-bottom: 1px solid #ccc;
+ }
+ #tr {
+   color : #46638c;
+   backgrond-color : black;
+ }
+     #first {
+       width:300px;
+       height : 10px;
+       background-color: #DDDDDD;
+       text-align:center;
+       font-weight: bold;
+     }
+      #content{
+        width: 100%;
+        margin: 0 auto;
+      }
+      #content h1 {
+        letter-spacing: 0.20em;
+        font-size : 20px;
+      }
+      #content p {
+        font-size : 12px;
+        color : #918980;
+      }
+      #main_contents{
+        width : 420px;
+        float : left;
+        margin-top : 15px;
+      }
+      #main_contents h3 {
+        font-size : 22px;
+        padding-bottom : 8px;
+        border-bottom : solid 1px #cccccc;
+      }
+      #main_contents p {
+        margin-top : 30px;
+        border-top : 1px solid #d1d1d1;
+        line-height : 180%;
+      }
+      #main_contents #figure {
+        margin-top : 30px;
+        text-align : center;
+      }
+        #main_contetns li {
+          padding: 5px;
+        }
+        footer {
+          font-size: 10px;
+          text-align : center;
+          margin-bottom : 100px;
+
+        }
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Everything.will.beok</title>
+  </head>
+  <body>
+    <div style="position: fixed; bottom: 50px; right: 50px;">
+      <a href="#">TOP</a>
+    </div>
+
+    <header>
+      <div id="logo">
+        <a href="main.html"><img src="img/logo.png" width="80" alt=""></a>
+      </div>
+
+      <nav id="menu">
+
+      <ul id="main_menu">
+        <li><a href="#.html">About</a>
+          <ul id="subsub">
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="location.html">Location</a></li>
+              </ul>
+            </li>
+        <li><a href="#">LookBook</a>
+          <ul id="subsub">
+            <li><a href="new.html">New</a></li>
+            <li><a href="best.html">Best</a></li>
+            </ul>
+          </li>
+        <li><a href="#">LineUp</a>
+          <ul id="subsub">
+            <li><a href="jewelry.html">Jewelry</a></li>
+            <li><a href="lifestyle.html">LifeStyle</a></li>
+            <li><a href="station.html">Station&Character</a></li>
+            <li><a href="illust.html">Illust&Doodle</a></li>
+            </ul>
+          </li>
+        <li><a href="#">Board</a>
+        <ul id="subsub">
+          <li><a href="notice.html">Notice</a></li>
+          <li><a href="qna.html">Q&A</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      </nav>
+    </header>
+<!--여기까지 헤더-->
+
+
+    <section>
+      <div id="content">
+        <center><h1>FAQ</h1>
+        <p>자주 묻는 질문 게시판입니다.</p></center>
+        <br><br>
+        <center>
+        <table class="notice">
+      <tr>
+          <th scope="row">No.</th>
+          <td id="subject">subject</td>
+          <td id="writer">writer</td>
+      </tr>
+      <tr>
+          <th scope="row">3</th>
+          <td id="subject">오프라인 매장에서 카드결제 가능한가요?</td>
+          <td id="writer">Administrator</td>
+      </tr>
+
+      <tr>
+          <th scope="row">2</th>
+          <td id="subject">이용 가능한 날짜와 시간이 궁금해요!</td>
+          <td id="writer">Administrator</td>
+      </tr>
+
+      <tr>
+          <th scope="row">1</th>
+          <td id="subject">온라인 배송은 진행은 안하시나요?</td>
+          <td id="writer">Administrator</td>
+      </tr>
+
+  </table>
+  </center>
+      </div>
+    </section>
+
+    <div class="clear"></div> <!-- float 속성 해제-->
+    <footer>
+      COPYRIGHT © 2019 KIMTAEHYUN. ALL RIGHTS RESERVED
+  </footer>
+  </body>
+</html>
